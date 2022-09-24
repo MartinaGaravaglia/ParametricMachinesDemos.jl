@@ -16,7 +16,7 @@ Y_train = map(poly, eachcol(X_train)) |> permutedims
 
 dimensions = [2, 4, 4, 4]
 
-# commento di prova per commit
+
 machine = DenseMachine(dimensions, sigmoid)
 
 model = Flux.Chain(machine, Dense(sum(dimensions), 1)) |> f64
